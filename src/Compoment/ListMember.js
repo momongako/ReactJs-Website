@@ -7,54 +7,20 @@ class ListMember extends Component {
         listTodo:{}
         
     }
-    // isChange = (event)=>{
-    //      this.setState({
-    //          namemember : event.target.value
-    //      })
-    //     console.log(event.target)
-    // }
+    
     ListDelete = (namemember)=>{
         console.log('Ok Delete' , namemember)
         this.props.DeleteListM(namemember);
     }
-    // ListCreat = (event) =>{
-        
-    //     console.log('check creat :',event)
-        
-    // }
+   
 
-    // ButtonCreatOne = () =>{
-        
-    //     return <div className="btn btn-warning sua" onClick={()=>this.HideAndShow()} ><i className="fa fa-edit "> </i>Sửa</div>
+   
+    
 
-    // }
     
-//     ButtonCreatTwo = () =>{
-       
-//        return   <div>
-//                     <input type="text" className="form-control" onChange={(event)=>this.isChange(event)} defaultValue={(event)=>this.isChange(event)}  placeholder="Tên" />
-//                     <input type="text" className="form-control" value={this.props.numberfone}  placeholder="Tel" />                             
-                
-//                     <select className="custom-select" value={this.props.Permission} >
-//                         <option>Quyền</option>
-//                         <option value={'Admin'}>Admin</option>
-//                         <option value={'Modrator'}>Modrator</option>
-//                         <option value={'Normal'}>Normal</option>
-//                     </select> <div className="btn btn-warning sua" onClick={()=>this.HideAndShow()} ><i className="fa fa-save "> </i>save</div>
-//                 </div>
+
     
-// //    return this.props.ketqua.map((item,index)=>(
-// //         <Buttoncreat HideAndShow = {(user)=>this.HideAndShow(item)} key= {index} />
-// //     ))
-//     }
-    
-    // showButtonCreat=() =>{
-    //     if (this.state.show===false) {
-    //         return this.ButtonCreatOne();
-    //     }else{
-    //         return this.ButtonCreatTwo();
-    //     }
-    // }
+   
     ListCreat =(user)=>{
         let {listM} = this.props;
         let {listTodo} = this.state;
